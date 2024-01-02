@@ -1,16 +1,48 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: space-around;
     min-height: 100vh;
     padding: 0;
     margin: 0;
 }
 
-div {
-    /* border: 1px solid green; */
-    flex-grow: 1;
+.header {
+    display: flex;
+    flex-direction: column;
 }
+
+.sect {
+    border: 1px solid green;
+    flex-grow: 1;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header_logo {
+    display: flex;
+    padding: 16px 0px;
+}
+
+/* justify-content: flex-start; */
+/* margin: 0; */
+/* flex-wrap: nowrap; */
+.hero {
+    display: flex;
+    /* align-items: sp; */
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+
+/* div {
+    border: 1px solid green;
+} */
+
+
 
 .footer {
     flex-grow: 0;
@@ -28,4 +60,75 @@ div {
 .header {
     background-color: #1f2937;
     color: white;
+}
+
+
+
+
+
+/* .header_logo */
+/* .header_logo {
+    justify-content: flex-start;
+}*/
+.links {
+    margin-left: auto;
+    display: flex;
+    gap: 32px;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo_text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+
+
+/* .hero_left {
+    /* flex-grow: 2;
+    flex-shrink: 1; */
+/* flex-basis: 300px; */
+/* }* */
+
+.hero_right {
+    /* border: 1px solid red; */
+    /* flex-grow: 1;
+    flex-shrink: 2; */
+    /* onerror="this.style.display='none'"; */
+    /* flex-basis: 200px; */
+    /* width: 300;
+    height: 3000; */
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-self: center; */
+    /* margin: 0px; */
+}
+
+.hero_right p {
+    /* flex-grow: 1; */
+    height: 80px;
+    /* width: 250px; */
+    /* align-self: center; */
+    /* text-align: center; */
+    padding: 0 15px;
+    margin: 0px;
+}
+
+.hero_left {
+    text-align: left;
+}
+
+.hero_left button {
+    background-color: #3882F6;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 2px 15px;
 }
